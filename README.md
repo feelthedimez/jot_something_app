@@ -1,1 +1,1 @@
-# jot_something_app
+# Jot Somethin' Application
