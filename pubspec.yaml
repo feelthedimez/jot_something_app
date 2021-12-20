@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   splash_screen_view: ^3.0.0
   switcher_button: ^0.0.4
+  flutter_svg: ^1.0.0
 
 
 dev_dependencies:
@@ -55,6 +56,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - assets/weather-icons/dark_mode/
+    - assets/weather-icons/light_mode/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
