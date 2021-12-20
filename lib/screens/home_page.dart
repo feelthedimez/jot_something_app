@@ -8,30 +8,23 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: IconButton(
-          icon: Icon(JotSomethinApp.themeNotifier.value == ThemeMode.light
-              ? Icons.dark_mode
-              : Icons.light_mode),
-          onPressed: () {
-            JotSomethinApp.themeNotifier.value =
-                JotSomethinApp.themeNotifier.value == ThemeMode.light
-                    ? ThemeMode.dark
-                    : ThemeMode.light;
-          }
-        )
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          Container(
+            color: Colors.pink,
+            child: const Center(
+              child: Text('Page 1')
+            )
+          ),
+          Container(
+            color: Colors.cyan
+          ),
+          Container(
+            color: Colors.amber
+          )
+        ],
       ),
-    );
-  }
-}
-
-class Stuff extends StatelessWidget {
-  const Stuff({ Key? key }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SwitcherButton(
-      
     );
   }
 }
