@@ -34,6 +34,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  splash_screen_view: ^3.0.0
+  switcher_button: ^0.0.4
+
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +48,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+  test: ^1.17.12
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -87,3 +91,27 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Light.otf
+          weight: 300
+        - asset: fonts/Poppins-LightItalic.otf
+          style: italic
+        - asset: fonts/Poppins-Regular.otf
+        - asset: fonts/Poppins-Medium.otf
+          weight: 500
+        # - asset: Poppins-MediumItalic.otf
+        #   style: italic
+
+splash_screen_view:
+  color: "#ffffff"
+  image: assets/icons/jotSomethin-logo_LIGHT.png
+
+  color_dark: "#1B262C"
+  image_dark: assets/icons/jotSomethin-logo_DARK.png
+
+  android: true
+  ios: true
+  web: false
