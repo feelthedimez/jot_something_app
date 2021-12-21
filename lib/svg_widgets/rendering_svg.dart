@@ -8,7 +8,7 @@ Widget svgIcon() {
     child: SvgPicture.asset(
       assetName,
       semanticsLabel: 'The Things man!',
-      height: 100,
+      height: 140,
     )
   );
 }

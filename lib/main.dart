@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jot_somethin/screens/current_weather_page.dart';
 import 'package:jot_somethin/screens/home_page.dart';
+import 'package:jot_somethin/screens/settings_page.dart';
 
 void main() {
   runApp(const JotSomethinApp());
@@ -22,13 +24,23 @@ class JotSomethinApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: 'Poppins',
             brightness: Brightness.light,
-            primarySwatch: Colors.amber,
+            canvasColor: const Color(0xFFF7F7F7),
+            scaffoldBackgroundColor: const Color(0xFFF7F7F7),
+            backgroundColor: const Color(0xFFF7F7F7)
           ),
-          darkTheme: ThemeData.dark(),
+          darkTheme: ThemeData.dark(
+
+          ),
           themeMode: currentMode,
-          home: const HomePage()
+          initialRoute: '/',
+          routes: {
+            '/': (_) => const WeatherPage(),
+            '/settings-page': (_) => const SettingsPage(),
+          },
         );
       }
     );
   }
+
+
 }
