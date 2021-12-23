@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jot_somethin/screens/current_weather_page.dart';
+import 'package:jot_somethin/screens/forecast_page.dart';
 import 'package:jot_somethin/screens/home_page.dart';
 import 'package:jot_somethin/screens/settings_page.dart';
 
@@ -34,8 +35,9 @@ class JotSomethinApp extends StatelessWidget {
           themeMode: currentMode,
           initialRoute: '/',
           routes: {
-            '/': (_) => const WeatherPage(),
+            '/': (_) => const HomePage(),
             '/settings-page': (_) => const SettingsPage(),
+            '/future-forecast': (_) => const FutureForecast(),
           },
         );
       }

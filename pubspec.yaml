@@ -60,6 +60,8 @@ flutter:
   assets:
     - assets/weather-icons/dark_mode/
     - assets/weather-icons/light_mode/
+    - assets/weather-icons-clean/light_mode/
+    - assets/weather-icons-clean/dark_mode/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -107,8 +109,9 @@ flutter:
         - asset: fonts/Poppins-Regular.otf
         - asset: fonts/Poppins-Medium.otf
           weight: 500
-        # - asset: Poppins-MediumItalic.otf
-        #   style: italic
+        - asset: fonts/Poppins-MediumItalic.otf
+          style: italic
+          weight: 500
 
 splash_screen_view:
   color: "#ffffff"

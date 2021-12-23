@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jot_somethin/screens/current_weather_page.dart';
+import 'package:jot_somethin/screens/forecast_page.dart';
 import 'package:jot_somethin/svg_widgets/rendering_svg.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: svgIcon(),
+        child: pageViewTingz(),
       ),
     );
   }
@@ -27,19 +29,9 @@ class HomePage extends StatelessWidget {
   Widget homeSide() {
     return PageView(
       scrollDirection: Axis.vertical,
-      children: <Widget>[
-        Container(
-          color: Colors.black38,
-          child: const Center(
-            child: Text("Today Weather"),
-          )
-        ),
-        Container(
-          color: Colors.blueAccent,
-          child: const Center(
-            child: Text("5 Day Forecast"),
-          )
-        )
+      children: const <Widget>[
+        WeatherPage(),
+        FutureForecast()
       ],
     );
   }

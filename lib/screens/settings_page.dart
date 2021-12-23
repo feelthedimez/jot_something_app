@@ -25,14 +25,13 @@ class SettingsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            headerWidget("App Settings"),
+            headerWidget("App Settings", false),
             _listItem("Dark Mode", context),
           ],
         )
       )
     );
   }
-// _listItem("Dark Mode", context)
 
   SwitcherButton switchButton(context) {
     return SwitcherButton(
